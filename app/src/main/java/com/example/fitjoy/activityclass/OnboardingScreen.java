@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.fitjoy.fragmentclass.Onboarding1;
 import com.example.fitjoy.fragmentclass.Onboarding2;
@@ -17,6 +19,7 @@ import com.example.fitjoy.R;
 
 public class OnboardingScreen extends AppCompatActivity {
 
+    LinearLayout getstartedbtn;
     ImageView mark1, mark2, mark3 , mark4, nextbtn, backbtn;
     int count = 1;
 
@@ -158,6 +161,16 @@ public class OnboardingScreen extends AppCompatActivity {
                 }
 
 
+            }
+        });
+
+
+        getstartedbtn = findViewById(R.id.getstartedbutton);
+        getstartedbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(OnboardingScreen.this,MainActivity.class);
+                startActivity(i);
             }
         });
 
