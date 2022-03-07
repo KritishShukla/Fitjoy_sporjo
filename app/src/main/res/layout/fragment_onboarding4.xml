@@ -45,8 +45,5 @@
             android:textSize="17sp"
             />
 
-
-
-
     </RelativeLayout>
 </FrameLayout>
