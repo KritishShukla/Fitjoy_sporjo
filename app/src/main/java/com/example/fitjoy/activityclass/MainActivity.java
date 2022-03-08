@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView homebtn = (ImageView) findViewById(R.id.home);
+        /*ImageView homebtn = (ImageView) findViewById(R.id.home);
         ImageView bazaarbtn = (ImageView) findViewById(R.id.bazaar);
         ImageView communitybtn = (ImageView) findViewById(R.id.community);
         ImageView userbtn = (ImageView) findViewById(R.id.user_profile);
@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 communitybtn.setImageResource(R.drawable.community_outline);
                 userbtn.setImageResource(R.drawable.usercolor);
             }
-        });
+        });*/
+
     }
 }
