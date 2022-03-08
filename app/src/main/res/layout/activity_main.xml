@@ -21,7 +21,7 @@
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:id="@+id/navigation_bar"
         app:fabCradleRoundedCornerRadius="50dp"
         android:layout_gravity="bottom"
@@ -39,7 +39,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_gravity="bottom"
         android:gravity="center"
         android:orientation="horizontal">
@@ -48,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp"
+            android:id="@+id/homebtn"
             android:layout_weight="1"
             android:src="@drawable/homeoutline"/>
 
@@ -55,6 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:id="@+id/commbtn"
             android:padding="10dp"
             android:src="@drawable/heart"/>
 
@@ -68,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:id="@+id/shopbtn"
             android:padding="10dp"
             android:src="@drawable/shopoutline"/>
 
@@ -76,6 +79,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:padding="10dp"
+            android:id="@+id/userbtn"
             android:src="@drawable/useroutline"/>
 
 
@@ -90,7 +94,6 @@
         android:layout_height="wrap_content"
         app:layout_anchor="@id/navigation_bar"
         android:tint="@color/white"
-        android:padding="0dp"
         android:backgroundTint="@color/white"
         android:src="@drawable/plus"
         app:maxImageSize="50dp"

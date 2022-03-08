@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*ImageView homebtn = (ImageView) findViewById(R.id.home);
-        ImageView bazaarbtn = (ImageView) findViewById(R.id.bazaar);
-        ImageView communitybtn = (ImageView) findViewById(R.id.community);
-        ImageView userbtn = (ImageView) findViewById(R.id.user_profile);
+        ImageView homebtn = (ImageView) findViewById(R.id.homebtn);
+        ImageView bazaarbtn = (ImageView) findViewById(R.id.shopbtn);
+        ImageView communitybtn = (ImageView) findViewById(R.id.commbtn);
+        ImageView userbtn = (ImageView) findViewById(R.id.userbtn);
 
         FragmentManager m = getSupportFragmentManager();
         FragmentTransaction t = m.beginTransaction();
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 t.replace(R.id.fragment, Home);
                 t.commit();
                 homebtn.setImageResource(R.drawable.homecolor);
-                bazaarbtn.setImageResource(R.drawable.online_shopping_outline);
-                communitybtn.setImageResource(R.drawable.community_outline);
-                userbtn.setImageResource(R.drawable.user);
+                bazaarbtn.setImageResource(R.drawable.shopoutline);
+                communitybtn.setImageResource(R.drawable.heart);
+                userbtn.setImageResource(R.drawable.useroutline);
             }
         });
 
@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
                 Fragment community = new Community();
                 t.replace(R.id.fragment, community);
                 t.commit();
-                homebtn.setImageResource(R.drawable.home);
-                bazaarbtn.setImageResource(R.drawable.online_shopping_outline);
-                communitybtn.setImageResource(R.drawable.community_colour);
-                userbtn.setImageResource(R.drawable.user);
+                homebtn.setImageResource(R.drawable.homeoutline);
+                bazaarbtn.setImageResource(R.drawable.shopoutline);
+                communitybtn.setImageResource(R.drawable.like);
+                userbtn.setImageResource(R.drawable.useroutline);
             }
         });
 
@@ -72,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
                 Fragment bazaar = new Bazaar();
                 t.replace(R.id.fragment, bazaar);
                 t.commit();
-                homebtn.setImageResource(R.drawable.home);
-                bazaarbtn.setImageResource(R.drawable.online_shopping_colour);
-                communitybtn.setImageResource(R.drawable.community_outline);
-                userbtn.setImageResource(R.drawable.user);
+                homebtn.setImageResource(R.drawable.homeoutline);
+                bazaarbtn.setImageResource(R.drawable.shopcolor);
+                communitybtn.setImageResource(R.drawable.heart);
+                userbtn.setImageResource(R.drawable.useroutline);
             }
         });
 
@@ -87,12 +87,12 @@ public class MainActivity extends AppCompatActivity {
                 Fragment user = new Profile();
                 t.replace(R.id.fragment, user);
                 t.commit();
-                homebtn.setImageResource(R.drawable.home);
-                bazaarbtn.setImageResource(R.drawable.online_shopping_outline);
-                communitybtn.setImageResource(R.drawable.community_outline);
+                homebtn.setImageResource(R.drawable.homeoutline);
+                bazaarbtn.setImageResource(R.drawable.shopoutline);
+                communitybtn.setImageResource(R.drawable.heart);
                 userbtn.setImageResource(R.drawable.usercolor);
             }
-        });*/
+        });
 
     }
 }
