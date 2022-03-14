@@ -10,7 +10,6 @@
     tools:context="activityclass.MainActivity">
 
 
-
         <FrameLayout
             android:id="@+id/fragment"
             android:layout_width="match_parent"
@@ -18,6 +17,7 @@
             android:layout_above="@id/navigation_bar">
 
         </FrameLayout>
+
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
@@ -28,10 +28,6 @@
         app:fabCradleMargin="10dp"
         android:backgroundTint="#022C4E"
         >
-
-
-
-
 
 
     </com.google.android.material.bottomappbar.BottomAppBar>

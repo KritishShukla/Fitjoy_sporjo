@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitjoy">
-        <activity android:name=".activityclass.OnboardingScreen"></activity>
-        <activity android:name=".activityclass.SplashScreen"
+        <activity android:name=".module"></activity>
+        <activity android:name=".activityclass.OnboardingScreen" />
+        <activity
+            android:name=".activityclass.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activityclass.MainActivity"></activity>
+        <activity android:name=".activityclass.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

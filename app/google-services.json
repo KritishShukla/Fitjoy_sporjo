@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1049529909923",
+    "project_id": "fitjoy-26e90",
+    "storage_bucket": "fitjoy-26e90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049529909923:android:73669b69a3e40298167516",
+        "android_client_info": {
+          "package_name": "com.example.fitjoy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049529909923-rksg3hb5mqk1epcnvqlrgl08sgie10fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzty24UHxmR_yW4qH54cyYOvvgrSCA7PI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049529909923-rksg3hb5mqk1epcnvqlrgl08sgie10fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
