@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitjoy">
+
+        <activity android:name=".activityclass.FitnessTShirt"></activity
         <activity android:name=".module"></activity>
+
         <activity android:name=".activityclass.OnboardingScreen" />
         <activity
             android:name=".activityclass.SplashScreen"

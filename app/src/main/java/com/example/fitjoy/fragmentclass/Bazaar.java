@@ -1,14 +1,23 @@
 package com.example.fitjoy.fragmentclass;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.fitjoy.R;
+import com.example.fitjoy.activityclass.FitnessTShirt;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +25,7 @@ import com.example.fitjoy.R;
  * create an instance of this fragment.
  */
 public class Bazaar extends Fragment {
+    CardView fitnessTShirt;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +71,19 @@ public class Bazaar extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bazaar, container, false);
+        View view = inflater.inflate(R.layout.fragment_bazaar, container, false);
+
+        fitnessTShirt = (CardView) view.findViewById(R.id.fitness_freak);
+        fitnessTShirt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), FitnessTShirt.class);
+                startActivity(i);
+            }
+        });
+
+
+        return view;
+
     }
 }
