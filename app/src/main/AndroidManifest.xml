@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fitjoy">
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
 
     <application
         android:allowBackup="true"
@@ -9,9 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitjoy">
+        <activity android:name=".activityclass.FitnessTShirt"></activity>
 
-        <activity android:name=".activityclass.FitnessTShirt"></activity
         <activity android:name=".module"></activity>
+
+        <activity android:name=".activityclass.FitnessReels"></activity>
 
         <activity android:name=".activityclass.OnboardingScreen" />
         <activity

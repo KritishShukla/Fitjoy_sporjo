@@ -45,7 +45,7 @@ public class OnboardingScreen extends AppCompatActivity {
         //Inflating first fragment bydefault
         FragmentManager m = getSupportFragmentManager();
         FragmentTransaction t = m.beginTransaction();
-        Fragment Home = new Onboarding1();
+        Fragment Home = new Onboarding2();
         t.replace(R.id.onboard_frag, Home);
         t.commit();
 
@@ -123,7 +123,7 @@ public class OnboardingScreen extends AppCompatActivity {
                 {
                     FragmentManager m = getSupportFragmentManager();
                     FragmentTransaction t = m.beginTransaction();
-                    Fragment Home = new Onboarding1();
+                    Fragment Home = new Onboarding2();
                     t.replace(R.id.onboard_frag, Home);
                     t.commit();
 

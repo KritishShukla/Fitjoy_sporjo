@@ -1,5 +1,6 @@
 package com.example.fitjoy.fragmentclass;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.fitjoy.R;
@@ -30,6 +32,7 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 public class Home extends Fragment {
+    LinearLayout walkingAR;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -92,6 +95,22 @@ public class Home extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_home, container, false);
+
+        walkingAR = (LinearLayout) v.findViewById(R.id.walkingAR);
+        walkingAR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent launchIntent = getActivity().getPackageManager().getLaunchIntentForPackage("com.DefaultCompany.Test");
+                if (launchIntent != null) {
+                    Toast.makeText(getContext(), "Starting Please wait...", Toast.LENGTH_SHORT).show();
+                    startActivity(launchIntent);//null pointer check in case package name was not found
+                }
+                else
+                {
+                    Toast.makeText(getContext(), "Null package name", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         weight_recycle = (RecyclerView) v.findViewById(R.id.homeworkout_recycler);
         snap.attachToRecyclerView(weight_recycle);

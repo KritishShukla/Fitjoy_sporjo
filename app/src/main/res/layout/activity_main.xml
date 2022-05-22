@@ -86,12 +86,12 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
-        android:id="@+id/addbtn"
+        android:id="@+id/dumbbellbtn"
         android:layout_height="wrap_content"
         app:layout_anchor="@id/navigation_bar"
         android:tint="@color/white"
         android:backgroundTint="@color/white"
-        android:src="@drawable/plus"
+        android:src="@drawable/fitjoy_icon"
         app:maxImageSize="50dp"
         android:contentDescription="TODO" />
 

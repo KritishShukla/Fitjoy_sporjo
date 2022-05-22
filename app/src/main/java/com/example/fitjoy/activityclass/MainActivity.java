@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,6 +15,7 @@ import com.example.fitjoy.fragmentclass.Bazaar;
 import com.example.fitjoy.fragmentclass.Community;
 import com.example.fitjoy.fragmentclass.Home;
 import com.example.fitjoy.fragmentclass.Profile;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView bazaarbtn = (ImageView) findViewById(R.id.shopbtn);
         ImageView communitybtn = (ImageView) findViewById(R.id.commbtn);
         ImageView userbtn = (ImageView) findViewById(R.id.userbtn);
+        FloatingActionButton dumbbellbtn = (FloatingActionButton) findViewById(R.id.dumbbellbtn);
 
         FragmentManager m = getSupportFragmentManager();
         FragmentTransaction t = m.beginTransaction();
@@ -59,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 t.commit();
                 homebtn.setImageResource(R.drawable.homeoutline);
                 bazaarbtn.setImageResource(R.drawable.shopoutline);
-                communitybtn.setImageResource(R.drawable.like);
+                communitybtn.setImageResource(R.drawable.heart_colour);
                 userbtn.setImageResource(R.drawable.useroutline);
             }
         });
@@ -91,6 +94,18 @@ public class MainActivity extends AppCompatActivity {
                 bazaarbtn.setImageResource(R.drawable.shopoutline);
                 communitybtn.setImageResource(R.drawable.heart);
                 userbtn.setImageResource(R.drawable.usercolor);
+            }
+        });
+
+        dumbbellbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,FitnessReels.class);
+                startActivity(i);
+                homebtn.setImageResource(R.drawable.homeoutline);
+                bazaarbtn.setImageResource(R.drawable.shopoutline);
+                communitybtn.setImageResource(R.drawable.heart);
+                userbtn.setImageResource(R.drawable.useroutline);
             }
         });
 

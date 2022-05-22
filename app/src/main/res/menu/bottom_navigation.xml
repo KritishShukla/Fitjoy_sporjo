@@ -12,7 +12,7 @@
         android:id="@+id/communitybtn"
         app:showAsAction="ifRoom"
         android:title="Community"
-        android:icon="@drawable/addbtn"/>
+        android:icon="@drawable/gym"/>
 
     <item
         android:id="@+id/shopbtn"
